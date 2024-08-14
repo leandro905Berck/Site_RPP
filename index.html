@@ -47,27 +47,20 @@
     <section id="localizacao" class="localizacao">
         <h2>Localização</h2>
         <p>R. Barão Rio Branco, 219 - Centro, Aguaí - SP</p>
-        <div id="mapa"></div>
+        <!-- Mapa Incorporado -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.7224306157136!2d-46.97889962503931!3d-22.06064393142161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8d7be8e95fcbf%3A0x5c02aeb1cd3e4976!2sR.%20Bar%C3%A3o%20Rio%20Branco%2C%20219%20-%20Centro%2C%20Agua%C3%AD%20-%20SP%2C%2013800-000!5e0!3m2!1spt-BR!2sbr!4v1692033344893!5m2!1spt-BR!2sbr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </section>
 
     <footer>
         <p>Telefone: <a href="https://api.whatsapp.com/send?phone=551934509000" target="_blank">19 3450-9000</a></p>
     </footer>
-
-    <!-- Google Maps Embed -->
-    <script>
-        function initMap() {
-            var location = {lat: -22.0606439, lng: -46.9788996};
-            var map = new google.maps.Map(document.getElementById('mapa'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 </html>
